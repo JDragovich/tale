@@ -40,6 +40,9 @@
   <meta property="article:tag" content="{{ tag }}">
   {% endfor %}
   {% endif %}
+  {% if page.heroimage %}
+    <meta property="og:image" content="{{ site.url  }}{{ page.heroimage }}" />
+  {% endif %}
   {% if author %}
   <meta property="article:author" content="{{ author.name }}" />
   {% endif %}
