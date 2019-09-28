@@ -20,7 +20,9 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <h2 class="post-subtitle">{{ page.subtitle }}</h2>
   <div class="post-line"></div>
-  <img class="post-hero-image" src="{{ page.heroimage  }}" />
+  <figure class="post-hero-image">
+    <img src="{{ page.heroimage  }}" alt="{{ page.heroalttext }}"/>
+  </figure>
 
   {{ content }}
 
