@@ -16,6 +16,11 @@
   <!-- RSS -->
   {% feed_meta %}
 
+  <!-- canonical link -->
+  {% if page.canonical %}
+  <link rel="canonical" href="{{page.canonical}}" >
+  {% endif %}
+
   <!-- social media meta -->
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
