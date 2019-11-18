@@ -16,11 +16,6 @@
   <!-- RSS -->
   {% feed_meta %}
 
-  <!-- canonical link -->
-  {% if page.altcanonical %}
-  <link rel="canonical" href="{{page.altcanonical}}" >
-  {% endif %}
-
   <!-- social media meta -->
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
